@@ -1,5 +1,6 @@
 plugins {
     java
+    application
 }
 
 group = "ua.kpi.comsys"
@@ -9,6 +10,10 @@ java {
     toolchain {
         languageVersion = JavaLanguageVersion.of(21)
     }
+}
+
+application {
+    mainClass = "ua.kpi.comsys.collections.Main"
 }
 
 repositories {
